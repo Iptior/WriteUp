@@ -2,7 +2,7 @@ Challenge présenté lors des phases de qualification à l'European Cyber Week 2
 
 Pour l'occasion, un CTF étudiant a été organisé, comportant des qualifications en ligne. "Dilemme" est un challenge de programmation.
 
-<h2><strong>1. Environnement du challenge</strong></h2>
+<h2>1. Environnement du challenge</h2>
 Lorsqu'on arrive sur la page du challenge, on peut y voir un Captcha et un QR-Code avec en dessous de chaque un formulaire.
 
 Nous avons tout d'abord tenté d'effectuer de faire des entrées à la main et ainsi vu qu'il fallait :
@@ -11,9 +11,9 @@ Nous avons tout d'abord tenté d'effectuer de faire des entrées à la main et a
  	<li>Avoir les 2 réponses.</li>
  	<li>Les captcha sont tous de la même forme : texte de 6 caractères en rouge sous fond blanc et écriture quasiment horizontale.</li>
 </ul>
-<h2><strong>2. Création d'un script
-</strong></h2>
+<h2>2. Création du script</h2>
 
+```python
 #!/usr/bin/env python2
 
 #------------ Différentes importations ------------#
@@ -95,13 +95,12 @@ req={'captcha':imge,'qrcode':codes[0],'nonce':nonc}
 resultat=requests.post(page,data=req,cookies=cookie).content
 print(resultat)
 print(req)
-
-<h2><strong>3. Récupération du flag</strong></h2>
+```
+<h2>3. Récupération du flag</h2>
 Après l’exécution du script, on récupère une page web contenant un nouveau QR-Code et un captcha ; en effet le flag était réparti sur ces deux images, il suffit de combiner les deux chaines trouvées.
 
 On peut donc valider le challenge avec le flag : <strong>ECW{20cbf8e17eb7e62936e3604b498776e6}</strong>
 
-&nbsp;
 <h3>Références</h3>
 ECW : <a href="https://european-cyber-week.eu/">https://european-cyber-week.eu/</a>
 
