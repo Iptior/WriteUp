@@ -7,7 +7,7 @@ Voici l'énoncé :
 nc 195.154.53.62 1337</pre>
 On s'y connecte et on fait quelques tests :
 
-<img class="alignnone size-full wp-image-367" src="AlexCTFMathBotDebut.jpg" alt="" width="718" height="530" />
+<img class="alignnone size-full wp-image-367" src="AlexCTFMathBotDebut.JPG" alt="" width="718" height="530" />
 
 Il faut donc répondre aux différentes questions mathématiques...
 <h2>2. Création d'un script</h2>
@@ -58,4 +58,4 @@ while 1:
 <h2>3. Récupération du flag</h2>
 On lance le script et le flag apparait au bout de ... 500 calculs.
 
-<img class="alignnone size-full wp-image-366" src="AlexCTFMathBot.jpg" alt="" width="816" height="662" />
+<img class="alignnone size-full wp-image-366" src="AlexCTFMathBot.JPG" alt="" width="816" height="662" />

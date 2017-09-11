@@ -3,11 +3,11 @@ Ce CTF a été organisé par la Nullcon pour sa 7ème édition, qui aura lieu à
 <h2>Énoncé</h2>
 Lorsqu'on arrive sur l'énoncé du chall :
 
-<img class="size-full wp-image-556 aligncenter" src="HackIm-Crypto2-Enonce.jpg" alt="" width="594" height="355" />
+<img class="size-full wp-image-556 aligncenter" src="HackIm-Crypto2-Enonce.JPG" alt="" width="594" height="355" />
 
 Et l'image cryptopuzzle2.png :
 
-<img class="size-full wp-image-558 aligncenter" src="HackIm-Crypto2-Img.jpg" alt="" width="1104" height="515" />
+<img class="size-full wp-image-558 aligncenter" src="HackIm-Crypto2-Img.JPG" alt="" width="1104" height="515" />
 <h2>Résolution</h2>
 Il faut chercher a et b, la solution se fera via un script :
 
@@ -50,6 +50,6 @@ flag{170,808}
 flag{710,268}
 flag{710,808}
 <h2>Récupération du flag</h2>
-<img class="size-full wp-image-557 aligncenter" src="HackIm-Crypto2.jpg" alt="" width="484" height="541" />
+<img class="size-full wp-image-557 aligncenter" src="HackIm-Crypto2.JPG" alt="" width="484" height="541" />
 
 Le flag était :<strong> flag{170,808}</strong>

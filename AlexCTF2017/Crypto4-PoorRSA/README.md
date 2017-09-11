@@ -6,7 +6,7 @@ On télécharge le zip et on trouve 2 fichiers à l'intérieur :
  	<li>flag.b64</li>
  	<li>key.pub</li>
 </ul>
-<img class="wp-image-362 size-full aligncenter" src="AlexCTFCryp4-2Files.jpg" width="634" height="128" />
+<img class="wp-image-362 size-full aligncenter" src="AlexCTFCryp4-2Files.JPG" width="634" height="128" />
 <h2>2. Chercher P et Q</h2>
 On affiche la clé publique en n'étant plus en base64 avec la commande suivante :
 
@@ -14,7 +14,7 @@ On affiche la clé publique en n'étant plus en base64 avec la commande suivante
 openssl rsa -noout -text -inform PEM -in key.pub -pubin
 ```
 
-<img class="alignnone wp-image-363 size-full" src="AlexCTFCryp4-RegardonsCommentEstLaClePublique.jpg" width="914" height="146" />
+<img class="alignnone wp-image-363 size-full" src="AlexCTFCryp4-RegardonsCommentEstLaClePublique.JPG" width="914" height="146" />
 
 Le modulus correspond au N donc N = P*Q.
 
@@ -30,7 +30,7 @@ et Q = 965445304326998194798282228842484732438457170595999523426901
 <h2>3. Trouver la clé privée</h2>
 Avec cela je peux lancer un script disponible sur <a href="https://github.com/ius/rsatool">Github s'intitulant rsatool.py</a> pour générer la clé privée.
 
-<img class="alignnone wp-image-365" src="AlexCTFCryp4-RsaTool.jpg" width="901" height="217" />
+<img class="alignnone wp-image-365" src="AlexCTFCryp4-RsaTool.JPG" width="901" height="217" />
 <h2>4. Déchiffrer message</h2>
 Il ne reste plus qu'à créer le script utilisant la clé privée pour déchiffrer le message :
 
@@ -54,4 +54,4 @@ print decrypted
 <h2>5. Récupération du flag</h2>
 On le lance et ...
 
-<img class="alignnone size-full wp-image-364" src="AlexCTFCryp4-Resultat.jpg" alt="" width="554" height="55" />
+<img class="alignnone size-full wp-image-364" src="AlexCTFCryp4-Resultat.JPG" alt="" width="554" height="55" />

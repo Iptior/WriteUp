@@ -67,8 +67,8 @@ for i in perm:
 ```
 
 Au bout d'une demi-heure, le script se termine et voici le résultat :
-<h2><img class="size-full wp-image-546 aligncenter" src="HackIm-Crypto1.jpg" alt="" width="896" height="688" />Récupération du flag</h2>
+<h2><img class="size-full wp-image-546 aligncenter" src="HackIm-Crypto1.JPG" alt="" width="896" height="688" />Récupération du flag</h2>
 On voit que la passphrase était : <strong>8lnustorcginl8
-</strong>Et surtout il ne nous reste plus qu'à cliquer sur "Toggle" :<img class="alignnone size-full wp-image-547" src="HackIm-Crypto1-result.jpg" alt="" width="812" height="493" />
+</strong>Et surtout il ne nous reste plus qu'à cliquer sur "Toggle" :<img class="alignnone size-full wp-image-547" src="HackIm-Crypto1-result.JPG" alt="" width="812" height="493" />
 
 Et nous avons le flag : <strong>flag{5KjzfnM4afWU8fJeUgGnxKbtG5FHtr6Suc41juGMUmQKC7WYzEG}</strong>
