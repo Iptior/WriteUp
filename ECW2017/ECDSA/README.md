@@ -9,13 +9,16 @@ Lorsqu'on arrive sur la page du challenge, on y voit un formulaire avec une cons
 En dessous, il se trouvait des textes en clair avec la signature associée et la clé publique pour vérifier la signature.
 
 Le but du challenge est donc de retrouver la clé privée afin de signer avec. La méthode de signature utilisée est ECDSA, les courbes ellyptiques !
-Regardons la clé publique :
-#openssl ec -noout -text -in key.pub -pubin
+<br/>Regardons la clé publique :
+```bash
+openssl ec -noout -text -in key.pub -pubin
+```
+
 <img src="ECW-Crypto3-Openssl.png"/>
 
 En faisant quelques recherches, j'ai vu que les signatures se décompose en 2 parties : r et s. Si le r est identique sur pour 2 signatures alors c'est vulnérable !
 En faisant une boucle cherchant des r identiques, on tombe sur 2 signatures :
-
+<pre>
 msg1='he signed data). These assuran'
 MEQCIDzdi89bc02mdxTxSo7tA8dmr3Xl0PrxugSy7KO93NR6AiArE3Hy+NPD3AYEuZTQy7vjzHVSLK0YsbEoPLZRZnI3fA==
 s1=19483809031160088219707292315523236671341089479317580677415257951387180480380
@@ -25,7 +28,7 @@ msg2='ture verification process. A s'
 MEUCIDzdi89bc02mdxTxSo7tA8dmr3Xl0PrxugSy7KO93NR6AiEAkhWDrap8G1x5mMSXJtdeJ56hx61G7sg4ojS+i4eabF4=
 s2=66075688492313585947077192467928663975716230924820824818833592868790764989534
 r2=27530209049394021804796111372881947298263230630819314890086433009851116082298
-
+</pre>
 Je peux donc créer le script de résolution. Le but étant de retrouver la valeur de la constante k qui permet d'avoir toujours la même signature (pas d'aléatoire) et ensuite de calculer la clé privée puis de signer.
 
 <h2>2. Création du script</h2>
