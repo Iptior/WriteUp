@@ -16,7 +16,7 @@ openssl ec -noout -text -in key.pub -pubin
 
 <img src="ECW-Crypto3-Openssl.png"/>
 
-En faisant quelques recherches, j'ai vu que les signatures se décompose en 2 parties : r et s. Si le r est identique sur pour 2 signatures alors c'est vulnérable !
+En faisant quelques recherches, j'ai vu que les signatures se décompose en 2 parties : r et s. Si le r est identique pour 2 signatures alors c'est vulnérable !
 En faisant une boucle cherchant des r identiques, on tombe sur 2 signatures :
 <pre>
 msg1='he signed data). These assuran'
