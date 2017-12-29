@@ -8,6 +8,8 @@ Here, you can find Write-Ups of challenges that I have been able to do. But the 
 
 <h2>Cryptographie</h2>
 
+</br><a href="https://github.com/Iptior/WriteUp/tree/master/34C3Junior/Dotr">34C3Junior/Dotr</a> : Négligeance de clé => BruteFore.
+</br><a href="https://github.com/Iptior/WriteUp/tree/master/34C3Junior/Kim">34C3Junior/Kim</a> : SHA1 => hash extender attack.
 </br><a href="https://github.com/Iptior/WriteUp/tree/master/3DS-2016/Crypto_master">3DS-2016/Crypto_master</a> : crypto simple "mode miroir".
 </br><a href="https://github.com/Iptior/WriteUp/tree/master/AlexCTF2017/Crypto4-PoorRSA">AlexCTF2017/Crypto4-PoorRSA</a> : RSA, petit coefficient, simple RSA.
 </br><a href="https://github.com/Iptior/WriteUp/tree/master/ECW2017/ECDSA">ECW2017/ECDSA</a> : Courbe Elliptique Signature.
