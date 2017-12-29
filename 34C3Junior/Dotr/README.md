@@ -16,14 +16,14 @@ En analysant le script et lancant quelques tests sur celui-ci (et à l'aide de p
 Le script prend la clé, puis cherche dans l'input le caractère correspondant à la clé puis fait +8
 
 Exemple d'application du script:
-input => 0123456789
-key   => [0,1,2,3,4,5,6,7] #Pour simplifier ;)
+</br>input => 0123456789
+</br>key   => [0,1,2,3,4,5,6,7] #Pour simplifier ;)
 
 on prend le premier chiffre de la clé, ici 0 ;
-on va à l'input [0] => 0
-Puis on fait +8  input[8] => 8
-Puis on fait +8 , à ben non, on a dépassé la longueur max , donc on récupère la suite de la clé : ici 1
-Et on reprend input[1] puis input[9] ...
+</br>on va à l'input [0] => 0
+</br>Puis on fait +8  input[8] => 8
+</br>Puis on fait +8 , à ben non, on a dépassé la longueur max , donc on récupère la suite de la clé : ici 1
+</br>Et on reprend input[1] puis input[9] ...
 
 Ce qui donne : output => 0<b>8</b>1<b>9</b>234567
 
@@ -63,7 +63,7 @@ print "flag : "+out
 ```
 
 Je lance le script et la sortie est :
-flag : _Th3_he_o corout 4G:Lrf1u_d034C3__i5e1rb7n0o?r!Y 00ph_W_lUB03e
-Wh00p here_i5_Y0ur coo1_fL4G: 34C3_d0ub1e_Th3_troUBl3_or_n07?!
+</br>flag : _Th3_he_o corout 4G:Lrf1u_d034C3__i5e1rb7n0o?r!Y 00ph_W_lUB03e
+</br>Wh00p here_i5_Y0ur coo1_fL4G: 34C3_d0ub1e_Th3_troUBl3_or_n07?!
 
 2 réponses, évidemment c'est la 2ème qu'on retient et le flag final est <strong>34C3_d0ub1e_Th3_troUBl3_or_n07?!</strong>

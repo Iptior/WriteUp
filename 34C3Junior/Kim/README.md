@@ -9,19 +9,19 @@ Elle permettait d'arriver sur un site web avec écrit : <pre>Download a sample h
 
 <h2>Début du challenge</h2>
 En faisant quelques tests sur le hash ou le nom du fichier on arrive à chaque fois sur un gif troll (la redirection se situant dans le script).
-On voit une liste de fichier dans http://35.198.133.163:1337/files/ :
+</br>On voit une liste de fichier dans http://35.198.133.163:1337/files/ :
 <pre>
     sample.gif
     dont.gif
     flag
 </pre>
 Il faut donc trouver le hash correspondant au flag ... 
-Ou on peut mettre plusieurs parametres dans l'url avec le "&". Il faut donc regarder du côté de l'<a href="https://en.wikipedia.org/wiki/Length_extension_attack">attaque hash extender</a>.
+</br>Ou on peut mettre plusieurs parametres dans l'url avec le "&". Il faut donc regarder du côté de l'<a href="https://en.wikipedia.org/wiki/Length_extension_attack">attaque hash extender</a>.
 
 
 <h2>Résolution</h2>
 Pour répondre au problème, j'utilise le <a href="https://github.com/iagox86/hash_extender">script hash_extender</a> se trouvant sur github.
-Comment marche-t-il ?
+</br>Comment marche-t-il ?
 
 <pre>./hash_extender -f sha1 -l 16 --data "f=sample.gif" -s 952bb2a215b032abe27d24296be099dc3334755c --append "&f=flag" </pre>
 
@@ -67,7 +67,7 @@ print "Fin du script"
 ```
 
 Je lance le script et je vais dans la dossier output, tiens le gif 15 ne s'affiche pas.
-Je fais un file, et trouve un texte ASCII, et il contient le flag :D
+</br>Je fais un file, et trouve un texte ASCII, et il contient le flag :D
 
 <strong>34C3_a11_y0u_ne3d_is_puMp_and_dump</strong>
 
@@ -76,4 +76,4 @@ Pour information, l'url final était : http://35.198.133.163:1337/files/90bbc483
 Références :
 
 Lien wikipédia sur l'attaque : https://en.wikipedia.org/wiki/Length_extension_attack
-Script hash_extender : https://github.com/iagox86/hash_extender
+</br>Script hash_extender : https://github.com/iagox86/hash_extender
